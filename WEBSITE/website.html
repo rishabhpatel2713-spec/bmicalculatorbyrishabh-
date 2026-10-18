@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart BMI Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <div class="calculator">
+
+            <div class="header">
+                <div class="icon">⚖️</div>
+                <h1>BMI Calculator</h1>
+                <p>Check your Body Mass Index</p>
+            </div>
+
+            <div class="input-group">
+
+                <label for="weight">Weight</label>
+
+                <div class="input-box">
+                    <input
+                        type="number"
+                        id="weight"
+                        placeholder="Enter weight"
+                    >
+                    <span>kg</span>
+                </div>
+
+            </div>
+
+
+            <div class="input-group">
+
+                <label for="height">Height</label>
+
+                <div class="input-box">
+                    <input
+                        type="number"
+                        id="height"
+                        placeholder="Enter height"
+                    >
+                    <span>cm</span>
+                </div>
+
+            </div>
+
+
+            <div class="buttons">
+
+                <button class="calculate-btn" onclick="calculateBMI()">
+                    Calculate BMI
+                </button>
+
+                <button class="reset-btn" onclick="resetCalculator()">
+                    Reset
+                </button>
+
+            </div>
+
+
+            <div id="result" class="result">
+
+                <p class="result-title">Your BMI</p>
+
+                <div id="bmi-value">--</div>
+
+                <div id="category">
+                    Enter your details above
+                </div>
+
+            </div>
+
+
+            <div class="bmi-scale">
+
+                <h3>BMI Categories</h3>
+
+                <div class="scale">
+
+                    <div class="scale-item underweight">
+                        <span>&lt; 18.5</span>
+                        <small>Underweight</small>
+                    </div>
+
+                    <div class="scale-item normal">
+                        <span>18.5 - 24.9</span>
+                        <small>Normal</small>
+                    </div>
+
+                    <div class="scale-item overweight">
+                        <span>25 - 29.9</span>
+                        <small>Overweight</small>
+                    </div>
+
+                    <div class="scale-item obese">
+                        <span>30+</span>
+                        <small>Obesity</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="footer">
+                BMI is a general screening measure and is not a diagnosis.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
